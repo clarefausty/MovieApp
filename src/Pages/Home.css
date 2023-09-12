@@ -6,10 +6,10 @@
 }
 .intro-section{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     color: #fff;
-    padding: 2em;
+    padding: 2em 0;
 }
 .moviebox-container{
     display: flex;
@@ -24,8 +24,11 @@
     align-items: center;
     border: 1px solid #ccc;
     border-radius: 0.5rem;
-    padding: 0 5em;
+    padding: 0 .5em;
     height: 2.5rem;
+  }
+  .search-input input{
+    margin-right: 7em;
   }
   
   .search-input search-icon {
@@ -50,15 +53,16 @@
   .content{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0;
     width: 100%;
     max-width: 404px;
     height: 285px;
-    padding: 2em;
+    padding: 4em 2em 2em 8em;
   }
   .content h3{
     font-size: 3rem;
     line-height: 3.5rem;
+    margin: 0;
   }
   .rate{
     display: flex;
@@ -80,6 +84,24 @@
     height: 50%;
   }
   .content button{
-    display: block;
+    display: flex;
+    gap: 0.5rem;
+   width: fit-content;
     align-items: center;
+    background-color: #BE123C;
+    padding: 1em  5em;
+    border: none;
+    border-radius: .5rem;
+    color: #ffffff;
   }
+  @media(max-width: 640px){
+    .intro-section{
+      flex-direction: column-reverse;
+      gap: 1rem;
+    }
+    .content{
+      padding-right: 1em;
+      padding-left: .3em;
+    }
+  }
+  

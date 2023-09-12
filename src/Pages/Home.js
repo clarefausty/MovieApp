@@ -38,7 +38,7 @@ function Home() {
         </div>
         </div>
         <p>John Wick is on the run after killing a member of the international assassians' guild and with a $14 million price tag on his head, he is the target of heat men and women everywhere</p>
-        <button>Watch Trailer<AiFillPlayCircle/></button>
+        <button><AiFillPlayCircle className="play-icon"/>Watch Trailer</button>
     </div>
     </div>
   )
