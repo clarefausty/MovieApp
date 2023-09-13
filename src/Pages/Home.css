@@ -94,6 +94,14 @@
     border-radius: .5rem;
     color: #ffffff;
   }
+  .card-container{
+    padding: 10em 2em;
+    color:black;
+  }
+  .card-component{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
   @media(max-width: 640px){
     .intro-section{
       flex-direction: column-reverse;
