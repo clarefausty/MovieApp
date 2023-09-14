@@ -59,23 +59,23 @@ const MovieDetails = () => {
           <div className='sidebar'>
             <div className='sidebar-pad'>
             <div className='sidebar-details'>
-              <img src='/Asset/tv.png' alt='Logo'/>
+              <img className='icon' src='/Asset/tv.png' alt='Logo'/>
               <p>MovieBox</p>
             </div>
             <div className='sidebar-details'>
-              <LiaHomeSolid/>
+              <LiaHomeSolid className='icon'/>
               <p>Home</p>
             </div>
             <div className='sidebar-details'>
-              <BiCameraMovie/>
+              <BiCameraMovie className='icon'/>
               <p>Movies</p>
             </div>
             <div className='sidebar-details'>
-              <PiTelevisionSimpleBold/>
+              <PiTelevisionSimpleBold className='icon'/>
               <p>TV Series</p>
             </div>
               <div className='sidebar-details'>
-              <GrLogout/>
+              <GrLogout className='icon'/>
               <p>Log out</p>
             </div>
             </div>
@@ -98,7 +98,13 @@ const MovieDetails = () => {
           <h1 data-testid="movie-title">{movieDetails.title}</h1>
           <p data-testid="movie-release-date">{movieDetails.release_date}</p>
           <p data-testid="movie-runtime">{movieDetails.runtime} minutes</p>
+          <div className='overview'>
           <p data-testid="movie-overview">{movieDetails.overview}</p>
+          <div className='overview-btn'>
+            <button>See Showtimes</button>
+            <button>More watch Options</button>
+          </div>
+          </div>
         </div>
         </div>
       ) : (
