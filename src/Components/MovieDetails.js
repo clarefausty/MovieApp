@@ -101,8 +101,8 @@ const MovieDetails = () => {
           <div className='overview'>
           <p data-testid="movie-overview">{movieDetails.overview}</p>
           <div className='overview-btn'>
-            <button>See Showtimes</button>
-            <button>More watch Options</button>
+            <button className='orange'>See Showtimes</button>
+            <button className='pink'>More watch Options</button>
           </div>
           </div>
         </div>

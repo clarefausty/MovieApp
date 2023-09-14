@@ -50,3 +50,16 @@
     display: grid;
     row-gap: 1rem;
 }
+.overview-btn button{
+    border: none;
+    font-size: 1rem;
+    padding: 0.5em 1em;
+    border-radius: .5rem;
+}
+.orange{
+    background-color: #BE123C;
+    color: #ffffff;
+}
+.pink{
+    background-color: #BE123C1A;
+}
