@@ -1,0 +1,28 @@
+.moviedetails-container{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    column-gap: 2rem;
+    
+}
+.sidebar{
+    display: grid;
+    row-gap: 2rem;
+    border: 1px solid #eee;
+    border-radius: 0  20%  20% 0;
+    
+}
+.sidebar-pad{
+    padding: 2em;
+}
+.sidebar-details{
+    display: grid;
+    grid-template-columns: 0.1fr 0.4fr;
+    align-items: center;
+    column-gap: 1rem;
+}
+.sidebar-details img{
+    width: 100%;
+}
+.bet{
+    width: 100%;
+}
