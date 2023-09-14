@@ -14,19 +14,28 @@ const API_key = 'api_key=9dcd1bbe1fcddd151198933257ad3d4a';
 const MovieDetails = () => {
   const {movieId }= useParams()
   const [movieDetails, setMovieDetails] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true)
+  const [videoKey, setVideoKey] = useState('');
 
   useEffect(() => {
     const fetchMovieDetails = async () => {
       try {
         
         const movieDetailsURL = `${base_url}/movie/${movieId}?${API_key}`;
-
+        const movieVideoURL = `${base_url}/movie/${movieId}/videos?${API_key}`;
         
         const response = await axios.get(movieDetailsURL);
+        const res = await axios.get(movieVideoURL)
 
         setMovieDetails(response.data);
 
+        const videoResult = res.data.results.find(
+          (result) => result.type === 'Trailer'
+        );
+        if (videoResult) {
+          setVideoKey(videoResult.key);
+        }
+        
         setLoading(false);
       } catch (error) {
         console.error('Error fetching movie details:', error);
@@ -37,6 +46,9 @@ const MovieDetails = () => {
     
     fetchMovieDetails();
   }, [movieId]);
+
+
+
 
   return (
     <div className="movie-details">
@@ -62,18 +74,27 @@ const MovieDetails = () => {
               <PiTelevisionSimpleBold/>
               <p>TV Series</p>
             </div>
-            <div className='sidebar-details'>
+              <div className='sidebar-details'>
               <GrLogout/>
               <p>Log out</p>
             </div>
-            <div className='bet'>
-                <p>Play movie quizes and earn free tickets</p>
-                <small>50k people are play now</small>
-                <button>Start Playing</button>
-              </div>
             </div>
           </div>
         <div className='genres'>
+        <div>
+              {videoKey ? (
+                <iframe
+                  title="Movie Trailer"
+                  width="560"
+                  height="315"
+                  src={`https://www.youtube.com/embed/${videoKey}`}
+                  frameBorder="8"
+                  allowFullScreen
+                ></iframe>
+              ) : (
+                <p>No trailer available.</p>
+              )}
+            </div>
           <h1 data-testid="movie-title">{movieDetails.title}</h1>
           <p data-testid="movie-release-date">{movieDetails.release_date}</p>
           <p data-testid="movie-runtime">{movieDetails.runtime} minutes</p>
