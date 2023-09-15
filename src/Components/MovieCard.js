@@ -12,7 +12,7 @@ const MovieCard = ({ poster_path, title, release_date, id }) => {
   return (
     <div data-testid="movie-card" className='movie-card-container'>
       <img data-testid="movie-poster" className='movie-img' src={getPosterURL(poster_path)} alt={title} />
-      <div >
+      <div className='detail-text' >
         <h3>{title}</h3>
         <p>{release_date}</p>
         <Link to={`movies/${id}`}>View Details</Link>

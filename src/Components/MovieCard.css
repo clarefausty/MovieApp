@@ -1,4 +1,36 @@
 .movie-card-container{
     width: 74%;
-    border: 1px solid black;
+    border: 1px solid #eee;
+    border-radius: .2rem;
+}
+.movie-card-container h3, p{
+    margin: 0 ;
+
+}
+.movie-img{
+    border-top-right-radius: .2rem;
+    border-top-right-radius: .2rem;
+    height: 15rem;
+    width: 100%;
+}
+.detail-text{
+    display: grid;
+    row-gap: .2rem;
+    padding: 0.5em 1em 0.3em 1em;
+}
+.detail-text  Link{
+    margin-bottom: 0;
+    text-decoration: none;
+    color: black;
+}
+
+@media(max-width:640px){
+    .movie-card-container{
+        width: 100%;
+
+    }
+    .movie-img{
+        width: 100%;
+
+    }
 }
