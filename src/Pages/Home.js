@@ -31,7 +31,7 @@ function Home() {
     axios
       .get(url)
       .then((response) => {
-        setMovies(response.data.results);
+        setMovies(response.data.results.slice(0, 10));
         setLoading(false);
       })
       .catch((err) => {
@@ -84,7 +84,9 @@ function Home() {
          </div>
          </div>
          <p>John Wick is on the run after killing a member of the international assassians' guild and with a $14 million price tag on his head, he is the target of heat men and women everywhere</p>
+         <div className='watch-btn'>
          <button><AiFillPlayCircle className="play-icon"/>Watch Trailer</button>
+         </div>
      </div>
      <div className='card-container' >
          <div className='card-con-title'>

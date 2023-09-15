@@ -81,7 +81,7 @@ const MovieDetails = () => {
             </div>
           </div>
         <div className='genres'>
-        <div>
+        <div className='video-container'>
               {videoKey ? (
                 <iframe
                   title="Movie Trailer"

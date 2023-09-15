@@ -1,5 +1,5 @@
 .movie-card-container{
-    width: 74%;
+    width: 85%;
     border: 1px solid #eee;
     border-radius: .2rem;
 }
@@ -10,13 +10,20 @@
 .movie-img{
     border-top-right-radius: .2rem;
     border-top-right-radius: .2rem;
-    height: 15rem;
-    width: 100%;
+    
 }
 .detail-text{
     display: grid;
-    row-gap: .2rem;
-    padding: 0.5em 1em 0.3em 1em;
+    row-gap: 1rem;
+    padding: 0.5em 1em 1em 2em;
+}
+.detail-text button{
+    cursor: pointer;
+    padding: 1em 3em;
+    border: none;
+    border-radius: .5rem;
+    color: #ffffff;
+    background-color: #BE123C;
 }
 #link{
     margin-bottom: 0;

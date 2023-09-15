@@ -15,7 +15,7 @@ const MovieCard = ({ poster_path, title, release_date, id }) => {
       <div className='detail-text' >
         <h3>{title}</h3>
         <p>{release_date}</p>
-        <Link id='link' to={`movies/${id}`}>View Details</Link>
+        <Link id='link' to={`movies/${id}`}><button>View Details</button></Link>
       </div>
     </div>
   )

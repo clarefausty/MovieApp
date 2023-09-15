@@ -41,6 +41,14 @@
 .genres{
     padding: 2em;
 }
+.video-container{
+    border-radius: .5rem;
+    overflow: hidden;
+}
+iframe{
+    border-radius: .5rem;
+    width: 100%;
+}
 .overview{
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -62,4 +70,15 @@
 }
 .pink{
     background-color: #BE123C1A;
+}
+@media(max-width:640px){
+    .moviedetails-container{
+        grid-template-columns: auto;
+    }
+    .sidebar{
+        display: none;
+    }
+    .overview{
+        grid-template-columns: auto;
+    }
 }

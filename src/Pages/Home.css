@@ -83,6 +83,9 @@
   .rate-num img, .rate-percent img{
     height: 50%;
   }
+  .watch-btn{
+    margin-top: 2em;
+  }
   .content button{
     display: flex;
     gap: 0.5rem;
@@ -102,7 +105,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 2rem;
-    row-gap: 2rem;
+    row-gap: 4rem;
+    padding: 1em 2em 2em 8em;
   }
   @media(max-width: 640px){
     .intro-section{
@@ -115,6 +119,7 @@
     }
     .card-component{
       grid-template-columns: auto;
+      padding: 2em 0;
     }
   }
   
