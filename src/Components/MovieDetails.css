@@ -31,6 +31,9 @@
 .sidebar-details img{
     width: 120%;
 }
+.sidebar-details p:hover{
+    color: #BE123C;
+}
 .sidebar-details img:hover{
     width: 130%;
 }
@@ -62,9 +65,12 @@ iframe{
     font-size: 2rem;
     font-weight: 500;
 }
-time{
+.time{
     font-size: 1.7rem;
     font-weight: 500;
+}
+.overview-p{
+    line-height: 1.8rem;
 }
 .overview{
     display: grid;
