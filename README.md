@@ -25,8 +25,15 @@ Users typically use it to do the following:
 
 Live link
 
+https://clarefaustymovieapp.netlify.app/
 
-![_]()
+
+![_](https://github.com/clarefausty/MovieApp/blob/master/public/Asset/Movie%20AppHomePage.png)
+
+
+
+
+![_](https://github.com/clarefausty/MovieApp/blob/master/public/Asset/MovieAppDetails.png)
 
 
 
