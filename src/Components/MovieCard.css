@@ -25,6 +25,10 @@
     color: #ffffff;
     background-color: #BE123C;
 }
+.detail-text button:hover{
+    background-color: #eee;
+    color: #BE123C;
+}
 #link{
     margin-bottom: 0;
     text-decoration: none;
