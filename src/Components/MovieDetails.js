@@ -106,9 +106,9 @@ const MovieDetails = () => {
           <p data-testid="movie-title">{movieDetails.title}</p>
           <p data-testid="movie-release-date">{movieDetails.release_date}</p>
           </div>
-          <p data-testid="movie-runtime">{movieDetails.runtime} minutes</p>
+          <p className='time' data-testid="movie-runtime">{movieDetails.runtime} minutes</p>
           <div className='overview'>
-          <p data-testid="movie-overview">{movieDetails.overview}</p>
+          <p className='overview' data-testid="movie-overview">{movieDetails.overview}</p>
           <div className='overview-btn'>
             <button className='orange'>See Showtimes</button>
             <button className='pink'>More watch Options</button>
