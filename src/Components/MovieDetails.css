@@ -40,6 +40,8 @@
 }
 .genres{
     padding: 2em;
+    display: grid;
+    row-gap: 2rem;
 }
 .genres nav{
     display: none;
@@ -57,6 +59,8 @@ iframe{
     display: grid;
     grid-template-columns: 1fr 4fr;
     align-items: center;
+    font-size: 2rem;
+    font-weight: 500;
 }
 .overview{
     display: grid;
@@ -72,13 +76,22 @@ iframe{
     font-size: 1rem;
     padding: 1em 1em;
     border-radius: .5rem;
+    cursor: pointer;
 }
 .orange{
     background-color: #BE123C;
     color: #ffffff;
 }
+.orange:hover{
+    background-color: #BE123C1A;
+    color: black;
+}
 .pink{
     background-color: #BE123C1A;
+}
+.pink:hover{
+    background-color: #fd0543;
+    color: #ffffff;
 }
 @media(max-width:640px){
     .moviedetails-container{
@@ -91,6 +104,9 @@ iframe{
     }
     .video-container{
         margin-top: 2em;
+    }
+    .name-date{
+        grid-template-columns: auto;
     }
     .sidebar{
         display: none;

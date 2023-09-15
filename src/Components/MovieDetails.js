@@ -103,7 +103,7 @@ const MovieDetails = () => {
               )}
             </div>
           <div className='name-date'>
-          <h2 data-testid="movie-title">{movieDetails.title}</h2>
+          <p data-testid="movie-title">{movieDetails.title}</p>
           <p data-testid="movie-release-date">{movieDetails.release_date}</p>
           </div>
           <p data-testid="movie-runtime">{movieDetails.runtime} minutes</p>
