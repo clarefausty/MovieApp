@@ -18,7 +18,7 @@
     row-gap: .2rem;
     padding: 0.5em 1em 0.3em 1em;
 }
-.detail-text  Link{
+#link{
     margin-bottom: 0;
     text-decoration: none;
     color: black;

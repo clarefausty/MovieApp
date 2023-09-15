@@ -89,7 +89,6 @@ function Home() {
      <div className='card-container' >
          <div className='card-con-title'>
          <h1>Featured Movies</h1>
-         <p>See More </p>
          </div>
       <div className="card-component">
 
