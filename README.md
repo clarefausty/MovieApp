@@ -1,4 +1,4 @@
-# SCREENIFY
+# MovieApp
 
 MovieSApp is a web based tool that gives movie recommendations and also trending movies.  
 Users typically use it to do the following:
