@@ -102,8 +102,10 @@ const MovieDetails = () => {
                 <p>No trailer available.</p>
               )}
             </div>
-          <h1 data-testid="movie-title">{movieDetails.title}</h1>
+          <div className='name-date'>
+          <h2 data-testid="movie-title">{movieDetails.title}</h2>
           <p data-testid="movie-release-date">{movieDetails.release_date}</p>
+          </div>
           <p data-testid="movie-runtime">{movieDetails.runtime} minutes</p>
           <div className='overview'>
           <p data-testid="movie-overview">{movieDetails.overview}</p>
