@@ -81,6 +81,13 @@ const MovieDetails = () => {
             </div>
           </div>
         <div className='genres'>
+          <nav>
+            <div className='nav-responsive-logo'>
+          <img src='/Asset/tv.png' alt='logo'/>
+            <h3>Movie Box</h3>
+            </div>
+          <span><img src='/Asset/Menu.png' alt='menu'/></span> 
+          </nav>
         <div className='video-container'>
               {videoKey ? (
                 <iframe

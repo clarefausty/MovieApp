@@ -41,6 +41,9 @@
 .genres{
     padding: 2em;
 }
+.genres nav{
+    display: none;
+}
 .video-container{
     border-radius: .5rem;
     overflow: hidden;
@@ -75,6 +78,14 @@ iframe{
 @media(max-width:640px){
     .moviedetails-container{
         grid-template-columns: auto;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .genres{
+        padding-top: 0;
+    }
+    .video-container{
+        margin-top: 2em;
     }
     .sidebar{
         display: none;
@@ -84,5 +95,17 @@ iframe{
     }
     .overview-btn{
         margin-top: 2em;
+    }
+    .genres nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em 0 .5em 0;
+        border-bottom: 1px solid #eee;
+    }
+    .nav-responsive-logo{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
     }
 }
