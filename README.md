@@ -1,6 +1,6 @@
 # MovieApp
 
-MovieSApp is a web based tool that gives movie recommendations and also trending movies.  
+MovieApp is a web based tool that gives movie recommendations and also trending movies.  
 Users typically use it to do the following:
 - Watch trailers of movies
 - Search for their favorite movie
