@@ -44,6 +44,7 @@
 .video-container{
     border-radius: .5rem;
     overflow: hidden;
+    width: 100%;
 }
 iframe{
     border-radius: .5rem;
@@ -61,7 +62,7 @@ iframe{
 .overview-btn button{
     border: none;
     font-size: 1rem;
-    padding: 0.5em 1em;
+    padding: 1em 1em;
     border-radius: .5rem;
 }
 .orange{
@@ -80,5 +81,8 @@ iframe{
     }
     .overview{
         grid-template-columns: auto;
+    }
+    .overview-btn{
+        margin-top: 2em;
     }
 }
