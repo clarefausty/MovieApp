@@ -116,6 +116,9 @@
     .intro-section{
       width: 90%;
     }
+    .first-section{
+      height: 80vh;
+    }
     .content{
       padding-right: 1em;
       padding-left: .3em;
