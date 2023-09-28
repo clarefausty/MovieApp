@@ -119,9 +119,13 @@
     .first-section{
       height: 80vh;
     }
+
     .content{
       padding-right: 1em;
       padding-left: .3em;
+    }
+    .card-container{
+      padding-top: 0;
     }
     .card-component{
       grid-template-columns: auto;
