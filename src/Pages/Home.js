@@ -49,6 +49,7 @@ function Home() {
 
   return (
     <div className="home-container">
+      <div className='first-section'>
       <div className='intro-section'>
              <div className='moviebox-container'>
              <img src='/Asset/tv.png' alt='logo'/>
@@ -87,6 +88,7 @@ function Home() {
          <div className='watch-btn'>
          <button><AiFillPlayCircle className="play-icon"/>Watch Trailer</button>
          </div>
+     </div>
      </div>
      <div className='card-container' >
          <div className='card-con-title'>

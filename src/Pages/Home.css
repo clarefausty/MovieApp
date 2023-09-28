@@ -3,10 +3,12 @@
     color: #fff;
     position: relative;
 }
-.intro-section{
+.first-section{
   background-image: url("../Assets/John-wick.jpg");
-   height: 50vh;
+  height: 100vh;
    overflow: hidden;
+}
+.intro-section{
     display: flex;
     justify-content: space-around;
     align-items: center;
