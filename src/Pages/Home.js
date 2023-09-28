@@ -31,7 +31,7 @@ function Home() {
     axios
       .get(url)
       .then((response) => {
-        setMovies(response.data.results.slice(0, 10));
+        setMovies(response.data.results.slice(0, 12));
         setLoading(false);
       })
       .catch((err) => {
